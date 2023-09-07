@@ -113,6 +113,11 @@ if [[ $EUID -ne 0 ]]; then
     error "请使用root用户执行此脚本"
 fi
 
+# 判断当前操作系统是不是systemd托管
+if [[ ! -d /usr/lib/systemd/system ]]; then
+    error "当前操作系统不支持systemd"
+fi
+
 # 初始化安装目录
 install -m 755 -d ${INSTALL_PATH} \
                   ${INSTALL_PATH}/bin \
