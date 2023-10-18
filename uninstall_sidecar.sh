@@ -91,7 +91,7 @@ fi
 
 # 用户手动确认
 red_echo "此操作将卸载sidecar服务，是否继续？[y/n]"
-read -r -p "" input
+read -r -p "" input < /dev/tty
 if [ "$input" != "y" ]; then
     exit 0
 fi

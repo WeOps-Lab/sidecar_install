@@ -162,7 +162,7 @@ EOF
 green_echo "step.4 生成sidecar配置文件 ${INSTALL_PATH}/sidecar.conf"
 cat > ${INSTALL_PATH}/sidecar.conf << EOF
 # The URL to the Graylog server API.
-server_url: "${SERVER_URL}"
+server_url: "${SERVER_URL}/api"
 
 # The API token to use to authenticate against the Graylog server API.
 # This field is mandatory

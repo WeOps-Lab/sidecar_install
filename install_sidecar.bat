@@ -45,7 +45,7 @@ set CONFIG_PATH=sidecar.conf
 echo. > %CONFIG_PATH%
 1>> "%CONFIG_PATH%" (
    echo # The URL to the Graylog server API.
-   echo server_url: "%SERVER_URL%"
+   echo server_url: "%SERVER_URL%/api"
    echo # The API token to use to authenticate against the Graylog server API.
    echo # This field is mandatory
    echo server_api_token: "%API_TOKEN%"
