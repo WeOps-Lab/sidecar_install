@@ -10,6 +10,7 @@ if "%confirm%" == "y" goto :uninstall
 if "%confirm%" == "n" goto :cancel
 goto :error
 
+:uninstall
 rem 停止sidecar服务
 echo "停止sidecar服务"
 net stop sidecar
@@ -23,3 +24,7 @@ echo "清空C:\gse\sidecar文件夹"
 rmdir /s /q C:\gse\sidecar
 
 echo "卸载完成"
+
+:cancel
+echo "取消卸载"
+exit 0
