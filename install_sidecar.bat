@@ -91,7 +91,8 @@ echo. > %CONFIG_PATH%
    echo collector_binaries_accesslist:
    echo - "C:\\gse\\sidecar\\bin\\filebeat.exe"
    echo - "C:\\gse\\sidecar\\bin\\packetbeat.exe"
-   echo - "C:\\gse\\sidecar\\bin\\winlogbeat.exe" >> %CONFIG_PATH%
+   echo - "C:\\gse\\sidecar\\bin\\winlogbeat.exe" 
+   echo - "C:\\gse\\sidecar\\bin\\metricbeat.exe" >> %CONFIG_PATH%
 )
 echo "配置文件生成成功"
 goto :eof

@@ -228,6 +228,7 @@ collector_binaries_accesslist:
 - "${INSTALL_PATH}/bin/packetbeat"
 - "${INSTALL_PATH}/bin/auditbeat"
 - "${INSTALL_PATH}/bin/uniprobe"
+- "${INSTALL_PATH}/bin/metricbeat"
 EOF
 
 # 激活sidecar服务
