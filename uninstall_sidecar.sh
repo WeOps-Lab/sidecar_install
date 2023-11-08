@@ -9,6 +9,7 @@
 # 运行需要root权限
 
 # 全局变量
+set -euo pipefail
 PROGRAM=$(basename "$0")
 VERSION=1.0
 EXITCODE=0
